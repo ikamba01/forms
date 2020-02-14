@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>forms</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.cm/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/mlogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel-parfait">Pixel-parfait</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="https://media.meteojob.com/theme/2.3/images/logo-white.png?201802221640&f23d2ac508759791af3dee5079074976acb27b71" alt="logo de meteo job">
+            <h2>Creez votre profil Meteojob</h2>
+        </header>
+        <!-- ------------------------header-------------------------------------------------- -->
+        <form action="#" method="get">
+            <div class="nometprenom">
+                <div>
+                    <label for="prenom">Prénom</label> <br>
+                    <input type="text" id="prenom" placeholder="Votre prenom" autofocus required class="reseign" />
+                </div>
+                <div>
+                    <label for="nom">Nom</label><br>
+                    <input type="text" id="nom" placeholder="Votre nom" required class="reseign" />
+                </div>
+            </div>
+            <!------------------------------------- NOM ET PRENOM ------------------------------------ -->
+            <div class="champs">
+                <label for="email">Adresse e-mail</label> <br>
+                <input type="email" id="email" placeholder="Votre adresse e-mail" class="saisi" />
+            </div>
+
+            <!-- -----------------------------------special --------------------------------------------------->
+
+
+            <div class="champs">
+                <label for="password">Mot de passe</label>
+                <div class="mdp">
+                    <input type="password" id="password" placeholder="Choisissez votre mot de passe" />
+                    <img src="./assets/img/hide.png" alt="oeil de verification" id="img">
+
+                </div>
+
+            </div>
+
+
+            <div class="champs">
+                <label for="job">Postes recherches</label> <br>
+                <input type="text" placeholder="Ex: Chef de projet,cuisinier" id="job" class="saisi" />
+            </div>
+
+
+            <div class="champs">
+                <label for="place">Où souhaitez-vous travailler ? </label> <br>
+                <input type="text" placeholder="Ex:Essone,Nantes,Bretagne" id="place" class="saisi" />
+            </div>
+            <!-- ----------------------------------types de contrats------------------------------------------ -->
+            <h3>Types de contrats recherchés</h3>
+
+            <div class="btn">
+
+                <div class="4"><button id="cdd">CDI</button> <button>CDD</button> <button>Independant/<br>Franchisé</button> <button>Intérim</button> </div>
+                <div class="3"><button>alternance/<br>Apprentissage</button><button>Stage</button> <span class="contrat"> +de types de contrat</span></div>
+
+            </div>
+            <!-- ----------------------------------conditions generales--------------------------------------- -->
+            <div class="content_condition">
+                <div class="accept">j'accepte les <a href="#">conditions générales</a> pour créer mon compte, bénéficier des services de matching et postuler aux offres:
+
+                </div>
+
+
+            </div>
+
+            <div><button type="submit" id="send">Continuer</button></div>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
