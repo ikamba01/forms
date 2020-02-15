@@ -31,7 +31,7 @@ header h2 {
     color: white;
     font-size: 1.2em;
     font-weight: 3em;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Poiret One', cursive;
 }
 
 
@@ -63,6 +63,7 @@ header h2 {
     font-size: 10px;
     text-transform: uppercase;
     background: #92999C;
+    border-radius: 5px;
 }
 
 .choise:before,
@@ -141,8 +142,8 @@ button {
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     border: none;
-    height: 7vh;
-    width: 9vw;
+    height: 300px;
+    width: 400px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -151,6 +152,19 @@ button:hover {
     background-color: #0F7EC5;
     color: white;
     transition: 1s;
+}
+
+.line {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.plus {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    width: 400px;
 }
 
 #cdd {
@@ -179,7 +193,7 @@ label {
 .nometprenom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3vh;
+    margin-bottom: 10px;
 }
 
 #prenom {
@@ -192,7 +206,7 @@ label {
     box-sizing: border-box;
     outline: none;
     width: 18vw;
-    height: 6vh;
+    height: 40px;
     padding-left: 10px;
     font-size: 1.2em;
     box-sizing: border-box;
@@ -200,7 +214,7 @@ label {
 
 .saisi {
     width: 40vw;
-    height: 6vh;
+    height: 40px;
     border: 2px solid #aaa;
     box-sizing: border-box;
     padding-left: 10px;
@@ -214,7 +228,7 @@ label {
 
 .mdp {
     width: 40vw;
-    height: 6vh;
+    height: 40px;
     border: 2px solid #aaa;
     box-sizing: border-box;
     padding-left: 10px;
@@ -273,6 +287,7 @@ button:hover {
     margin-left: 14vw;
     background-color: #0f7ec5;
     color: white;
+    margin-top: 50px;
 }
 
 label {
@@ -313,6 +328,7 @@ h3 {
     font-size: 0.9em;
     color: #000000;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
 }
 
 .accept a {
