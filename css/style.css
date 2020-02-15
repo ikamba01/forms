@@ -37,6 +37,142 @@ header h2 {
 
 /* ******************************deco header et background */
 
+.switch {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 1px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    box-sizing: content-box;
+}
+
+.choise {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #92999C;
+}
+
+.choise:before,
+.choise:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    transition: inherit;
+    box-sizing: content-box;
+}
+
+.choise:before {
+    content: attr(data-non);
+    right: 11px;
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.choise:after {
+    content: attr(data-oui);
+    left: 11px;
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.input:checked~.choise {
+    background: #0F7EC5;
+}
+
+.input:checked~.choise:before {
+    opacity: 0;
+}
+
+.input:checked~.choise:after {
+    opacity: 1;
+}
+
+.switched {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 43px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #F0F0F0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #F0F0F0);
+    border-radius: 1%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switched:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 20px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+.input:checked~.switched {
+    left: 74px;
+}
+
+
+/* ********************************oui /non********************* */
+
+button {
+    padding: 8px;
+    background-color: #F2F2F2;
+    text-align: center;
+    font-size: 0.9em;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    height: 7vh;
+    width: 9vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0F7EC5;
+    color: white;
+    transition: 1s;
+}
+
+#cdd {
+    background-color: #0F7EC5;
+    color: white;
+}
+
+#send {
+    margin: auto;
+    cursor: pointer;
+    margin-left: 14vw;
+    background-color: #0F7EC5;
+    color: white;
+}
+
+label {
+    color: #16354E;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
 
 /* champs de saisi */
 
@@ -183,4 +319,13 @@ h3 {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: #16354e;
+}
+
+.content_condition {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check {
+    margin-top: 5vh;
 }
